@@ -20,7 +20,7 @@ public class ControladorListaTareas extends HttpServlet {
         DBConnection connection = (DBConnection) session.getAttribute("connection");
         List<Task> tasks = connection.getTasks();
         session.setAttribute("tasks", tasks);
-        response.sendRedirect("vista/vistaListaTareas.jsp");
+        response.sendRedirect("vista/vistaListaTareas2.jsp");
     }
 
     public void destroy() {
